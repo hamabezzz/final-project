@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #555;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+        .all-news{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            /* background-color: #b4736c; */
+        }
+
+        .news-left{
+            margin: 10px 10px 0 10px;
+            background-color: rgba(0,100,0,0.3);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        aside {
+            /* width: 30%; */
+            padding-left: 15px;
+            margin: 10px 15px;
+            padding: 5px 10px;
+            /* float: right; */
+            font-style: italic;
+            /* background-color: rgb(214, 210, 210, 0.3); */
+            background-color: #c9c0cc;
+            border-radius: 3px;
+        }
+
+        footer {
+            /* position: absolute;
+            bottom: 0; */
+            width: 100%;
+            text-align: center;
+            padding: 3px 0;
+            background-color: #d85b4d;
+            color: white;
+            z-index: 5;
+            font-size: 16px;
+            height: 40px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .all-news{
+                display: block;
+            }
+
+            iframe{
+                width: 100% !important;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="https://www.wcvb.com/">wcvb</a>
+        <a href="https://www.nbcboston.com/">nbc boston</a>
+        <a href="https://www.bostonglobe.com/">the boston globe</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main>
+        <section class="all-news">
+            <div class="news-left">
+                <article class="news">
+                    <img src="" alt="">
+                    <h2>News</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, aliquam. Consectetur magni repellat suscipit quae eaque eum officia. Nobis suscipit eius, ipsam nulla officiis velit ullam dolorum nesciunt, optio necessitatibus quisquam asperiores, dolorem aperiam error modi distinctio! Reiciendis fuga quod dignissimos ab totam placeat quos veniam repellat consequuntur quas quo doloribus vitae, ex, neque voluptates nulla hic blanditiis. Debitis qui facilis doloremque officia quisquam quas velit, ea impedit harum ut iste vero. Modi similique esse illo repellat sed ipsum animi dolorum iusto tenetur, repellendus dolor. Aut modi illo quibusdam natus praesentium, labore doloremque vitae sequi animi placeat odit ratione maiores.
+                    </p>
+                </article>
+                <article class="news">
+                    <img src="" alt="">
+                    <h2>News</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque provident saepe modi sapiente, rerum animi commodi placeat excepturi laudantium tempora, quaerat id quam labore laboriosam magni consequuntur expedita deserunt laborum cumque ut ab illo. Error ipsam quaerat qui, aperiam cupiditate dignissimos excepturi amet distinctio, impedit tempore at sed fugiat.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti minima, porro error fugiat officiis accusamus perferendis modi omnis? Unde dolorem at ea blanditiis ab earum officia corrupti. Quae, reprehenderit?</p>
+                </article>
+            </div>
+
+            <div class="news-right">
+                <aside>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, qui adipisci labore rerum veniam explicabo recusandae quo? Sit ex in error praesentium, laborum similique quos exercitationem inventore quam suscipit totam veniam, aut nisi labore eligendi rerum libero fuga eius voluptatibus! Quisquam error, nihil deleniti ex consectetur molestias facilis ipsam? Deserunt, natus provident sit impedit ullam beatae labore doloremque dolores consequatur non. Facere, eligendi. que explicabo, expedita provident obcaecati  repudiandae!
+                    </p>
+                    <!-- Paste Video Link inside the src attribute -->
+                    <iframe width="320" height="245" src="https://www.youtube.com/embed/eN5mG_yMDiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+     <footer> <small>&copy; Copyright 2021, Tsz Yin Seto</small> </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
